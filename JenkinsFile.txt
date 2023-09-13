@@ -1,7 +1,4 @@
 node('built-in') {
-stage('CloneRepo') {
-git 'https://github.com/aniket607607/Gitjenkinstest.git'
-}
 stage('BuildAndTest') {
 bat '''javac HelloWorld.java
 java HelloWorld'''
